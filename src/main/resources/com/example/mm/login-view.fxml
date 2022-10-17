@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="450.0" prefWidth="411.0" spacing="20.0" style="-fx-background-color: #F3E497;"
+      xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.mm.controllers.LoginController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <Label text="Welcome to our phone shop! :)">
+        <font>
+            <Font name="System Bold Italic" size="18.0"/>
+        </font>
+    </Label>
+    <Label prefHeight="46.0" prefWidth="371.0"
+           text="To get into our shop, please fill the labels username and password"/>
+    <Label text="If you already have an account, press login, otherwise press sign up!"/>
+    <Label alignment="TOP_LEFT" text="Username:">
+        <font>
+            <Font name="System Bold" size="12.0"/>
+        </font>
+    </Label>
+    <TextField id="usernameField" fx:id="usernameField" prefHeight="26.0" prefWidth="321.0"/>
+
+    <Label text="Password:">
+        <font>
+            <Font name="System Bold" size="12.0"/>
+        </font>
+    </Label>
+    <PasswordField id="passwordField" fx:id="passwordField"/>
+    <Label fx:id="signupNegativeFeedback" text="Username already taken!" textFill="#e80606"/>
+    <Label fx:id="loginNegativeFeedback" text="Wrong username or password!" textFill="RED"/>
+
+    <Button fx:id="loginButton" onAction="#onLoginButtonClick" style="-fx-background-color: #EAC540;" text="Login"/>
+    <Button fx:id="signUpButton" mnemonicParsing="false" onAction="#onSignUpButtonClick"
+            style="-fx-background-color: #EAC540;" text="Sign up"/>
+</VBox>

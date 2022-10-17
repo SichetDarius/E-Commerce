@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F9E1AA;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mm.controllers.CheckoutController">
+    <children>
+        <Button layoutX="283.0" layoutY="313.0" mnemonicParsing="false" onAction="#onPayButtonClick" style="-fx-background-color: #D5D21A;" text="Pay" />
+        <Button layoutX="451.0" layoutY="347.0" mnemonicParsing="false" onAction="#onCartButtonClick" style="-fx-background-color: #E78926;" text="Back to Cart" />
+        <Button layoutX="61.0" layoutY="347.0" mnemonicParsing="false" onAction="#onShopButtonClick" style="-fx-background-color: #E78926;" text="Back to Shop" />
+        <Label layoutX="75.0" layoutY="60.0" text="First Name:" textFill="#22148c">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <TextField fx:id="firstName" layoutX="75.0" layoutY="83.0" prefHeight="26.0" prefWidth="199.0" />
+        <Label layoutX="75.0" layoutY="133.0" text="Address:" textFill="#22148c">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label layoutX="72.0" layoutY="227.0" text="Phone number:" textFill="#22148c">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <TextField fx:id="addressField" layoutX="73.0" layoutY="159.0" prefHeight="50.0" prefWidth="424.0" />
+        <Label layoutX="73.0" layoutY="25.0" prefHeight="18.0" prefWidth="219.0" text="Product delivery details:" textFill="#33147c">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="phoneNumberField" layoutX="75.0" layoutY="259.0" prefHeight="26.0" prefWidth="244.0" />
+        <TextField fx:id="lastName" layoutX="301.0" layoutY="83.0" prefHeight="26.0" prefWidth="191.0" />
+        <Label layoutX="301.0" layoutY="60.0" text="Last Name:" textFill="#22148c">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

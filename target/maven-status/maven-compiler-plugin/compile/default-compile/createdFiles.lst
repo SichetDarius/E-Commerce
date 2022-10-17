@@ -1,0 +1,17 @@
+com\example\mm\models\Product.class
+com\example\mm\models\User.class
+com\example\mm\utils\database\DatabaseQueries.class
+com\example\mm\services\UserService.class
+com\example\mm\utils\ServiceUtils.class
+com\example\mm\services\UserStateService.class
+com\example\mm\services\ProductsService.class
+com\example\mm\controllers\CartController.class
+com\example\mm\controllers\ProductController.class
+com\example\mm\controllers\ShopController.class
+com\example\mm\utils\ControllerUtils.class
+com\example\mm\utils\database\DatabaseQueriesNames.class
+com\example\mm\HelloApplication.class
+module-info.class
+com\example\mm\controllers\CheckoutController.class
+com\example\mm\controllers\FeedbackController.class
+com\example\mm\controllers\LoginController.class

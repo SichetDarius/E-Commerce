@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #86C191;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mm.controllers.FeedbackController">
+    <children>
+        <Label layoutX="153.0" layoutY="155.0" text="Thank you for your purchase!" textAlignment="CENTER">
+            <font>
+                <Font name="Calibri Bold" size="24.0" />
+            </font>
+        </Label>
+        <Button layoutX="247.0" layoutY="221.0" mnemonicParsing="false" onAction="#onShopButtonClick" style="-fx-background-color: #469856;" text="Back to the shop" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

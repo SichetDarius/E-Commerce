@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #418EA4;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mm.controllers.CartController">
+    <children>
+        <Button layoutX="273.0" layoutY="316.0" mnemonicParsing="false" onAction="#onOrderButtonClick" style="-fx-background-color: #97BEC8;" text="Order" AnchorPane.leftAnchor="273.0">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font>
+        </Button>
+        <Button layoutX="500.0" layoutY="26.0" mnemonicParsing="false" onAction="#onLogoutButtonClick" style="-fx-background-color: #668B95;" text="Logout" AnchorPane.rightAnchor="48.0">
+            <font>
+                <Font name="System Italic" size="12.0" />
+            </font>
+        </Button>
+        <Button layoutX="475.0" layoutY="316.0" mnemonicParsing="false" onAction="#onShopButtonClick" style="-fx-background-color: #97BEC8;" text="Back to Shop">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+
+        <Label fx:id="cartNegativeFeedback" layoutX="165.0" layoutY="346.0" text="Please add something to the cart before ordering!" textFill="#e5bd00" />
+
+        <Label layoutX="121.0" layoutY="280.0" text="Total:" AnchorPane.leftAnchor="121.0">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+
+        <Label fx:id="totalLabel" layoutX="209.0" layoutY="280.0" text="0.0">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <TableView fx:id="productTable" layoutX="121.0" layoutY="65.0" prefHeight="200.0" prefWidth="336.0" AnchorPane.leftAnchor="121.0" AnchorPane.rightAnchor="143.0">
+            <columns>
+                <TableColumn fx:id="nameColumn" prefWidth="105.5999984741211" text="Name" />
+                <TableColumn fx:id="priceColumn" prefWidth="110.4000244140625" text="Price" />
+                <TableColumn fx:id="quantityColumn" onEditCommit="#onChangeQuantityInTable" prefWidth="105.20001220703125" text="Quantity" />
+
+            </columns>
+            <effect>
+                <ColorAdjust brightness="-0.08" contrast="-0.41" hue="-0.9" saturation="0.42" />
+            </effect>
+        </TableView>
+        <Button fx:id="updateButton" layoutX="402.0" layoutY="281.0" mnemonicParsing="false" onAction="#onUpdateButtonClick" style="-fx-background-color: #97BEC8;" text="Update">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

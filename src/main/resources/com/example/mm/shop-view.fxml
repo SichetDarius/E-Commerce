@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400" prefWidth="600" style="-fx-background-color: #5EA8AF;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mm.controllers.ShopController">
+    <children>
+        <Button layoutX="446.0" layoutY="38.0" mnemonicParsing="false" onAction="#onCartButtonClick" prefHeight="26.0" prefWidth="127.0" style="-fx-background-color: #598D98;" text="Cart" AnchorPane.rightAnchor="26.799999999999955" />
+        <TextField fx:id="searchBar" layoutX="46.0" layoutY="39.0" prefHeight="26.0" prefWidth="270.0" AnchorPane.leftAnchor="46.0" />
+        <Button fx:id="searchButton" layoutX="332.0" layoutY="38.0" mnemonicParsing="false" onAction="#onSearchButtonClick" style="-fx-background-color: #438E9D;" text="Search" AnchorPane.leftAnchor="330.0">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font>
+        </Button>
+        <Accordion layoutY="239.0" />
+        <Label layoutX="46.0" layoutY="76.0" text="Order by:" AnchorPane.leftAnchor="46.0">
+            <font>
+                <Font name="System Bold Italic" size="16.0" />
+            </font>
+        </Label>
+        <ComboBox fx:id="orderByBox" layoutX="46.0" layoutY="108.0" onAction="#onOrderByClick" prefHeight="26.0" prefWidth="163.0" visibleRowCount="2" AnchorPane.leftAnchor="46.0">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:id="pAsc" fx:value="Price ascending" />
+                    <String fx:id="pDesc" fx:value="Price descending" />
+                </FXCollections>
+            </items>
+        </ComboBox>
+        <TableView fx:id="productTable" layoutX="46.0" layoutY="144.0" prefHeight="232.0" prefWidth="516.0" AnchorPane.leftAnchor="46.0" AnchorPane.rightAnchor="26.79">
+            <columns>
+                <TableColumn fx:id="nameColumn" prefWidth="262.5999984741211" text="Name" />
+                <TableColumn fx:id="priceColumn" prefWidth="263.7999572753906" text="Price" />
+            </columns>
+            <effect>
+                <ColorAdjust brightness="-0.11" contrast="-0.4" hue="-0.36" saturation="0.09" />
+            </effect>
+        </TableView>
+    </children>
+    <opaqueInsets>
+        <Insets />
+    </opaqueInsets>
+</AnchorPane>

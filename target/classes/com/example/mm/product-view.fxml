@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #AAF2F9;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mm.controllers.ProductController">
+    <children>
+        <Label id="productTitle" fx:id="productTitle" layoutX="23.0" layoutY="59.0" prefHeight="72.0" prefWidth="348.0" wrapText="true">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label id="productPrice" fx:id="productPrice" layoutX="401.0" layoutY="129.0" prefHeight="44.0" prefWidth="127.0" textFill="#1f1f24">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Button fx:id="addToCart" layoutX="394.0" layoutY="220.0" mnemonicParsing="false" onAction="#onAddToCartButtonClick" text="Add To Cart" textFill="#dd8c1a" />
+        <Label fx:id="feedbackLabel" layoutX="394.0" layoutY="263.0" text="Successfully added to cart!" />
+        <Button layoutX="394.0" layoutY="289.0" mnemonicParsing="false" onAction="#onShopButtonClick" prefHeight="26.0" prefWidth="115.0" text="Back to Shop" textFill="#228444" />
+        <Button layoutX="394.0" layoutY="336.0" mnemonicParsing="false" onAction="#onCartButtonClick" prefHeight="26.0" prefWidth="115.0" text="Go to Cart" textFill="#0c4dff" />
+        <Label layoutX="394.0" layoutY="69.0" text="Price of product:">
+            <font>
+                <Font name="System Bold Italic" size="24.0" />
+            </font>
+        </Label>
+      <Label fx:id="productDescription" layoutX="23.0" layoutY="153.0" prefHeight="204.0" prefWidth="356.0" wrapText="true">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font></Label>
+    </children>
+</AnchorPane>
